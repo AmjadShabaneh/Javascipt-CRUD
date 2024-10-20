@@ -1,0 +1,80 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.head-title{
+    font-size: 48px;
+    text-align: center;
+}
+.create-task-form{
+    border: 1px solid rgb(111, 111, 207);
+    width: 70%;
+    border-radius:5px;
+    margin: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    padding: 16px;
+   
+}
+label[for="task-desc"]{
+display: block;
+margin-block: 8px;
+}
+.task-desc{
+    width: 100%;
+    display: block;
+    margin-block: 8px;
+    height: 25px;
+    border-radius:5px;
+    border:1px solid rgb(111, 111, 207);
+    outline: none;
+}
+.task-desc:focus{
+    border: 2px solid rgb(111, 111, 207) ;
+}
+.btn{
+    padding-block: 8px;
+    padding-inline: 18px;
+    background-color:rgb(49, 101, 234) ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 300ms;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: rgb(40, 84, 197) ;
+}
+.btn:active{
+    background-color: rgb(32, 73, 175) ;
+}
+.tasks-sec{
+    display: block;
+    margin-top:48px;
+    width: 70%;
+    margin-inline: auto;
+    padding: 16px;
+    
+}
+.task-card{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    padding: 10px;
+    background: aliceblue;
+    margin-block: 10px;
+}
+.actions{
+    padding: 10px;
+}
+.completed{
+    text-decoration: line-through;
+    color: rgb(14, 207, 43);
+}
+.edit-mode{
+    justify-content: flex-start;
+    gap: 20px;
+}
